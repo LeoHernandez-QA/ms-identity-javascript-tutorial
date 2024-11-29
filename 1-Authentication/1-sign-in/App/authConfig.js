@@ -6,8 +6,8 @@
 
 const msalConfig = {
     auth: {
-        clientId: 'Enter_the_Application_Id_Here', // This is the ONLY mandatory field that you need to supply.
-        authority: 'https://login.microsoftonline.com/Enter_the_Tenant_Info_Here', // Defaults to "https://login.microsoftonline.com/common"
+        clientId: '8a3f1e7b-284f-48a4-85d0-60fc62280148', // Enter_the_Application_Id_Here - This is the ONLY mandatory field that you need to supply.
+        authority: 'https://login.microsoftonline.com/5db860bd-0c26-4a06-9834-7fe6c8d30cf1', // Enter_the_Tenant_Info_Here - Defaults to "https://login.microsoftonline.com/common"
         redirectUri: '/', // You must register this URI on Azure Portal/App Registration. Defaults to window.location.href e.g. http://localhost:3000/
         navigateToLoginRequestUrl: true, // If "true", will navigate back to the original request location before processing the auth code response.
     },
@@ -55,10 +55,10 @@ const loginRequest = {
  * between applications by providing a "login_hint" property.
  */
 
-// const silentRequest = {
-//   scopes: ["openid", "profile"],
-//   loginHint: "example@domain.net"
-// };
+ const silentRequest = {
+   scopes: ["openid", "profile"],
+   loginHint: "hernandeez00@hotmail.com"
+ };
 
 // exporting config object for jest
 if (typeof exports !== 'undefined') {

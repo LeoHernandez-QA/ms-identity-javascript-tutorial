@@ -1,0 +1,8 @@
+# Node
+node_modules/
+
+# Cypress
+cypress/screenshots/
+
+# Environments
+cypress.env.json
